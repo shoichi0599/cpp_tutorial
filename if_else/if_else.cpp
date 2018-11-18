@@ -27,5 +27,19 @@ int main() {
         cout << "Not quitting." << endl;
     }
 
+    if (value == 1) {
+        cout << "Adding new record ..." << endl;
+    } else if (value == 2) {
+        cout << "Deleting record ..." << endl;
+    } else if (value == 3) {
+        cout << "Viewing ..." << endl;
+    } else if (value == 4) {
+        cout << "Searching ..." << endl;
+    } else if (value == 5) {
+        cout << "Quitting" << endl;
+    } else {
+        cout << "Invalid option." << endl;
+    }
+
     return 0;
 }
