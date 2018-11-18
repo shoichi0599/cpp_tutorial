@@ -8,9 +8,8 @@ int main() {
     // const => variable can not be re-asigned
     const string password = "hello";
 
-    cout << "Enter your password > " << flush;
-
     string input;
+    /*
     do {
         cout << "Enter your password > " << flush;
         cin >> input;
@@ -19,8 +18,20 @@ int main() {
             cout << "Access denied." << endl;
         }
     } while (input != password);
+    */
+    // ↓ make it better
+    do {
+        cout << "Enter your password > " << flush;
+        cin >> input;
 
-    cout << "Password accepted" << endl;
+        if (input == password) {
+            break;
+        } else {
+            cout << "Access denied." << endl;
+        }
+    } while (true);
+
+    cout << "Password accepted." << endl;
 
     return 0;
 }
