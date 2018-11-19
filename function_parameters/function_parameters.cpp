@@ -1,4 +1,4 @@
-// Name : return_values.cpp
+// Name : function_parameters.cpp
 
 #include <iostream>
 using namespace std;
@@ -17,12 +17,8 @@ int getInput() {
     return input;
 }
 
-int main() {
-
-    showMenu();
-    int selection = getInput();
-
-    switch(selection) {
+void processSelection(int option) {
+    switch(option) {
         case 1:
             cout << "Searching ..." << endl;
             break;
@@ -35,6 +31,13 @@ int main() {
         default:
             cout << "Please select an item from the menu." << endl;
     }
+}
+
+int main() {
+
+    showMenu();
+    int selection = getInput();
+    processSelection(selection);
     
     return 0;
 }
