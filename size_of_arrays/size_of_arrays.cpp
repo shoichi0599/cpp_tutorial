@@ -1,4 +1,4 @@
-// Name : sizeof.cpp
+// Name : size_of_arrays.cpp
 
 #include <iostream>
 using namespace std;
