@@ -11,8 +11,9 @@ cpp_tutorial
  └ README.md
 ```
 
-# Visual Code Settings
-## Code Runner
+## Visual Code Settings
+### Code Runner
+Go to
 ```
 Preference -> Settings -> Extensions -> Run Code configuration -> Executor Map -> Edit in settings.json
 ```
